@@ -1,0 +1,245 @@
+.nav-main-escritorio  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    /* Sobre escribe los pixels del body*/
+    font-size: 27px;
+    /* Afecta a las clases que abarca, 3 Imagen y las 2 listas*/
+    display: flex;
+    justify-content:space-between;
+    height: 90px;
+    padding: 20px 0;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 0 5px 0px #999;
+    z-index: 15;
+}
+.nav-main-responsive{
+    display: none;
+}
+
+/* BUSCADOR */
+.nav-main-busqueda{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__form{
+    display: flex;
+    width: 100%;
+}
+
+.header__select{
+    border: solid 1px rgb(197, 191, 191);
+    background-color: #fff;
+    border-radius: 5px 0 0 5px ;
+    display: flex;
+    align-items: center;
+    padding: 0 10px ;
+    position: relative;
+}
+
+.header__select span{
+    font-size: .9rem;
+    color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.header__select span i{
+    font-size: .7rem;
+    margin-left: 10px;
+}
+.header__select ul{
+    display: none ;
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    font-size: .9rem;
+    background-color: #fff;
+    border-radius: 0px 0 5px 5px;
+    box-shadow: 0 0 5px 0px #999;
+}
+
+.header__select ul li a{
+    display: inline-block;
+    padding: 5px 10px;
+    width: 100%;
+}
+
+.header__select ul li a:hover{
+    border-bottom: none;
+    background-color: rgba(204, 204, 204, 0.233);
+}
+
+
+
+.input__search{
+    display: inline-block;
+    width: 400px;
+    height: 30px;
+    font-size: 14px;
+    border: solid 1px rgb(197, 191, 191);
+    border-left: none;
+    border-right: none;
+    padding: 6px;
+    flex: 1;
+    padding-left: 25px;
+}
+
+.header__checked{
+    display: flex;
+    align-items: center;
+    font-size: .9rem;
+    border: solid 1px rgb(197, 191, 191);
+    border-right: none;
+    padding: 0 10px;
+}
+
+.header__checked label{
+    margin-left: 5px;
+}
+
+.header__lupa{
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 0;
+    border: solid 1px rgb(197, 191, 191);
+    margin: 0;
+    border-radius: 0 5px 5px 0;
+}
+
+/* --- */
+
+.carrito_nav{
+    position: relative;
+    cursor: pointer;
+}
+
+.carrito_contador{
+    position: absolute;
+    z-index: 2;
+    content: '2';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .8rem;
+    top: -.5rem;
+    right: -.2rem;
+    width: 1rem;
+    height: 1rem;
+    background-color: rgb(90, 241, 20);
+    border-radius: 50%;
+}
+
+  /* Achico la imagen a 100 pixel */
+.nav-brand {
+    background-color: chocolate;
+    height: 90px;
+    cursor: pointer;
+}
+
+/* Se cre un flex para que las LI estén horizontales*/
+.nav-main-busqueda,
+.nav-main-iconos  {
+    display: flex;
+}
+
+.nav-main-iconos{
+    padding-right: 15px;
+    position: relative;
+}
+
+.nav-main-iconos li{
+    margin-left: 15px;
+    position: relative; 
+}
+
+@media (max-width: 850px) {
+    .nav-main-escritorio{
+        display: none;
+    }
+
+    .nav-main-responsive{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #ffffff;
+        /* Sobre escribe los pixels del body*/
+        font-size: 27px;
+        /* Afecta a las clases que abarca, 3 Imagen y las 2 listas*/
+        display: flex;
+        justify-content:space-between;
+        height: 90px;
+        padding: 20px 0;
+        align-items: center;
+        width: 100%;
+        box-shadow: 0 0 5px 0px #999;
+        z-index: 15;
+    }
+
+    .nav-main-iconos li:nth-child(1){
+        margin-left: 0px;
+    }
+
+    .menu-desplegable-background{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.212);
+        z-index: 20;
+    }
+
+    .menu-desplegable{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100vh;
+        background-color: #fff;
+        box-shadow: 0 0 5px 0px #999;
+    }
+
+    .menu-desplegable-cerrar{
+        height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        font-size: 27px;
+        padding: 15px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .menu-desplegable-item a{
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+        padding: 15px;
+        font-size: 22px;
+        border-bottom: 1px solid #eee;
+    }
+
+    /* FORMUALRIO */    
+    .header__form{
+        display: flex;
+        width: auto;
+    }
+    
+    .input__search{
+        width: 175px;
+        border: solid 1px rgb(197, 191, 191);
+        border-left: solid 1px rgb(197, 191, 191);
+        padding: 6px 0;
+        padding-left: 5px;
+        border-radius: 5px 0px 0px 5px;
+    }
+}

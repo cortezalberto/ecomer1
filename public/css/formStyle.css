@@ -1,0 +1,125 @@
+/* =================== FORM ========================= */
+.title-section{
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.form-container{
+    background-color: #fff;
+    padding: 10px;
+}
+
+.registerInputImg{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.registerInputImg img{
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+    object-fit: cover;
+    transition: .5s;
+}
+.registerInputImg input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.registerInputImg label{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.registerInputImg label:hover ~ img{
+    opacity: 1;
+}
+
+
+.registerInput{
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.registerInput label{
+    display: block;
+    font-size: .9rem;
+    font-weight: 700;
+    color: #555;
+}
+
+.registerInput .textInput{
+    background-color: #eee;
+    box-shadow: 0 0 1px 0px #999;
+    border: none;
+    width: 50%;
+    overflow: hidden;
+    border-radius: 5px;
+    padding: 10px 5px;
+    position: relative;
+}
+
+.price{
+    width: 200px !important;
+}
+
+.priceContainer {
+    height: 100%;
+    position: relative;
+}
+
+.btnSubmit{
+    color: #fff;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    background-color: rgb(18, 89, 195);
+    width: 50%;
+}
+
+.registerFormPregunta{
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.errores{
+    color: #F75252;
+}
+
+.registerFormPregunta a{
+    color: rgb(18, 89, 195);
+}
+
+@media (max-width: 850px) {
+    .form-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+        padding-top: 20px;
+    }
+
+    .registerInput .textInput{
+        width: 100%;
+    }
+
+    .btnSubmit{
+        width: 100%;
+    }
+}
